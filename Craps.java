@@ -25,6 +25,11 @@ public class Craps
         while (true)
         {
             //opening and rules
+            d1 = new Die();
+            d2 = new Die();
+            roll1 = d1.roll();
+            roll2 = d2.roll();
+            rollTotal = roll1 + roll2;
             System.out.println("Let's play Craps!");
             System.out.println("Would you like to know the rules? (y/n)");
             String rules = in.nextLine();
@@ -84,7 +89,9 @@ public class Craps
                     }
                 }
                 //ending of game and if they want to play again
-                System.out.println("Good Game!");
+                
+            }
+            System.out.println("Good Game!");
                 System.out.println("Do you want to play again? (y/n)");
                 String playAgain = in.nextLine();
                 if(playAgain.equals(""))
@@ -95,7 +102,6 @@ public class Craps
                 {
                     break;
                 }
-            }
         }
         System.out.println("Thank you for playing!");
     }
