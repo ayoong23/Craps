@@ -106,3 +106,40 @@ public class Craps
         System.out.println("Thank you for playing!");
     }
 }
+
+/*
+
+COMMENTS FROM THE INSTRUCTOR:
+
+This is such a *clean* program, Andy, in the way you've arranged the code on the
+page--it makes it much more legible to read, and perhaps reflects your organized
+approach to writing it. You have correctly implemented the rules of the game, and
+the flow of play is quite good.
+
+Here are some recommendations for you.
+
+1. You implemented a "default Yes/No" feature for the play again question, and 
+   that worked well. Ideally, you would indicate that by saying "(Y/n)", with
+   the capital letter indicating the default option. And the default option at
+   the end of the game *should* be to keep playing, not to quit. Make it as
+   easy as possible for people to keep playing the game!
+
+2. Along those lines, it's pretty annoying to have to refuse the instructions
+   everytime a new game begins. It probably makes sense to put that question
+   before the main game loop starts so the player doesn't have to keep dealing
+   with that.
+
+3. A very small point: In the main part of the game you actually get the dice
+   rolls right after the user hits [Enter], and that's a good, logical place
+   to make that happen. In the first roll, you set up the dice and roll them
+   (twice?) before you've even gotten to asking them to roll the dice, which
+   is a little confusing, and inconsistent with what you did later. I'd move
+   that code to a more logical place in your program.
+
+Otherwise, really nice work on this! I'm looking forward to seeing more  of
+it when we start our next project next week!!
+
+SCORE: 49/50
+
+*/
+
